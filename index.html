@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <p class="logo">Glorison</p>
+    <nav>
+      <ul>
+        <li><a href="#eventHandling">Event Handling</a></li>
+        <li><a href="#interactiveElements">Interactive Elements</a></li>
+        <li><a href="#formValidation">Form Validation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="eventHandling">
+      <h1>Event Handling</h1>
+      <button id="clickButton">Click Me</button>
+      <div id="hoverBox">Hover Over Me</div>
+      <input type="text" id="keypressInput" placeholder="Type something...">
+      <button id="doubleClickButton">Double-Click Me</button>
+    </section>
+
+    <section id="interactiveElements">
+      <h1>Interactive Elements</h1>
+      <button id="toggleButton">Toggle Text</button>
+      <p id="toggleText">Hello, World!</p>
+      <div id="imageGallery">
+        <img id="galleryImage" src="https://th.bing.com/th/id/OIP.AQz9JxjCvszSkqXNa1jslwHaEK?w=286&h=180&c=7&r=0&o=5&pid=1.7" alt="Gallery Image" width="300">
+        <button id="prevImage">Previous</button>
+        <button id="nextImage">Next</button>
+      </div>
+      <div id="tabs">
+        <button class="tabButton" data-tab="1">Tab 1</button>
+        <button class="tabButton" data-tab="2">Tab 2</button>
+        <div id="tabContent1" class="tabContent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nesciunt mollitia, assumenda quia repellendus, autem nam eligendi maxime eos cumque molestiae dolores odio quidem error quos blanditiis numquam doloribus illum at. Distinctio, sint beatae nam officiis magnam eveniet dolor quos eligendi, pariatur, odio sapiente. Nam atque velit dignissimos provident in voluptates temporibus amet aut nisi? Atque, similique. Earum atque amet neque eum corrupti aspernatur ducimus! Dolores doloribus odio repudiandae minus maxime veritatis est veniam voluptas deserunt? Ab distinctio minima ipsam.</div>
+        <div id="tabContent2" class="tabContent" style="display: none;">Content for Tab 2</div>
+      </div>
+    </section>
+
+    <section id="formValidation">
+      <h1>Form Validation</h1>
+      <form id="validationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="8" required>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formFeedback"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Glorison. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
